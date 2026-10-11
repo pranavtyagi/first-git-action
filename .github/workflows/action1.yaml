@@ -1,0 +1,11 @@
+name: First action
+on:
+ workflow_dispatch
+jobs:
+ ci-run-manual-task:
+   runs-on: ubuntu:latest
+   steps:
+    - name: task1
+      run: echo "Hello from trigger workflow_dispatch"
+    - name: task2
+      run: echo "Deploying to"
